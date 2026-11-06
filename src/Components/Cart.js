@@ -1,6 +1,7 @@
 
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Cart.css';
 
 const Cart = () => {
@@ -52,7 +53,7 @@ const Cart = () => {
         <div className="emptyCart">
           <h2>Your cart is empty</h2>
           <p>Looks like you haven't added anything to your cart yet.</p>
-          <a href="/products" className="shopNowBtn">Start Shopping</a>
+          <Link to='/products' className='btn btn-primary'>  Start Shopping </Link>
         </div>
       ) : (
         <div className="cartContainer">
