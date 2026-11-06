@@ -1,0 +1,361 @@
+.home {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f5f2ed;
+  color: #24211e;
+}
+
+
+.hero {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.15)
+  );
+  display: flex;
+  align-items: center;
+}
+
+.heroText {
+  margin-left: 10%;
+  max-width: 500px;
+  color: white;
+}
+
+.welcome {
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+
+.heroText h1 {
+  font-size: 65px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.heroText p {
+  font-size: 18px;
+}
+
+.shopButton,
+.darkButton,
+.lightButton {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.shopButton {
+  background: #c6a36b;
+  color: #181818;
+}
+
+.shopButton:hover {
+  background: white;
+  color: #181818;
+}
+
+
+
+.summerSection {
+  width: 90%;
+  max-width: 1400px;
+  min-height: 480px;
+  margin: 0 auto 100px;
+  display: flex;
+  background: #e4d5c1;
+  overflow: hidden;
+  border-radius: 8px; 
+}
+
+.summerImage {
+  width: 50%;
+  min-height: 480px;
+}
+
+.summerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.summerText {
+  width: 50%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.sectionLabel {
+  color: #a47a43;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.summerText h2,
+.sectionHeading h2,
+.feedbackSection h2 {
+  font-size: 35px;
+  margin: 0 0 15px 0;
+  color: #24211e;
+}
+
+.summerText p:not(.sectionLabel) {
+  color: #5d5145;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.darkButton {
+  background: #24211e;
+  color: white;
+  border-radius: 4px;
+}
+
+.darkButton:hover {
+  background: #a47a43;
+  color: white;
+}
+
+
+.dealsSection {
+  width: 100%;
+  padding: 85px 7%;
+  background: #24211e;
+  color: white;
+  text-align: center;
+}
+
+.sectionHeading {
+  margin-bottom: 45px;
+}
+
+.sectionHeading h2 {
+  color: white;
+}
+
+.sectionHeading > p:last-child {
+  color: #c8c0b5;
+}
+
+.dealsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.dealCard {
+  background: #fff;
+  color: #24211e;
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.3s;
+  border-radius: 6px;
+}
+
+.dealCard:hover {
+  transform: translateY(-8px);
+}
+
+.dealImage {
+  width: 100%;
+  height: 360px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dealImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.dealCard:hover .dealImage img {
+  transform: scale(1.05);
+}
+
+.saleBadge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  background: #a47a43;
+  color: white;
+  padding: 8px 13px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.dealInfo {
+  padding: 22px;
+}
+
+.dealInfo h3 {
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+.dealPrices {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.oldPrice {
+  color: #130101;
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+.newPrice {
+  color: #a47a43;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.dealButton {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  background: #24211e;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.dealButton:hover {
+  background: #a47a43;
+  color: white;
+}
+
+.lightButton {
+  display: inline-block;
+  background: #c6a36b;
+  color: #24211e;
+  padding: 14px 30px;
+  margin-top: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.lightButton:hover {
+  background: white;
+  color: #24211e;
+}
+
+
+.feedbackSection {
+  width: 100%;
+  padding: 90px 7%;
+  text-align: center;
+  background: #f5f2ed;
+}
+
+.feedbackSection h2 {
+  margin-bottom: 45px;
+  color: #24211e;
+}
+
+.feedbackGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feedbackCard {
+  background: white;
+  padding: 50px 35px;
+  border: 1px solid #e5ded3;
+  border-radius: 8px;
+}
+
+.stars {
+  color: #c39851;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+
+.feedbackCard p {
+  color: #655c52;
+  line-height: 1.8;
+  margin: 25px 0;
+}
+
+.feedbackCard h3 {
+  font-size: 16px;
+  color: #24211e;
+}
+
+
+@media (max-width: 900px) {
+  .summerSection {
+    flex-direction: column;
+  }
+
+  .summerImage,
+  .summerText {
+    width: 100%;
+  }
+
+  .dealsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feedbackGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dealsSection,
+  .feedbackSection {
+    padding: 55px 5%;
+  }
+
+  .dealsGrid,
+  .feedbackGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dealImage {
+    height: 400px;
+  }
+}

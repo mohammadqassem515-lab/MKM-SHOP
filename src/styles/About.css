@@ -1,0 +1,146 @@
+.aboutPage {
+  width: 100%;
+  padding: 80px 7%;
+  background: #f5f2ed;
+  color: #24211e;
+}
+
+.aboutHero {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.aboutHero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #24211e;
+}
+
+.aboutHero p {
+  color: #655c52;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.aboutStorySection {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 80px;
+  background: white;
+  border: 1px solid #e5ded3;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.aboutImageWrapper {
+  flex: 1;
+  height: 690px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.aboutImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.aboutImageWrapper:hover img {
+  transform: scale(1.03);
+}
+
+.aboutTextContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutLabel {
+  color: #a47a43;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.aboutTextContent h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #24211e;
+  line-height: 1.3;
+}
+
+.aboutTextContent p {
+  color: #655c52;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.aboutFeaturesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.featureCard {
+  background: white;
+  padding: 35px 30px;
+  border: 1px solid #e5ded3;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.featureCard h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #24211e;
+}
+
+.featureCard p {
+  color: #655c52;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .aboutStorySection {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .aboutImageWrapper {
+    width: 100%;
+    height: 300px;
+  }
+
+  .aboutFeaturesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutPage {
+    padding: 50px 5%;
+  }
+
+  .aboutHero h1 {
+    font-size: 32px;
+  }
+
+  .aboutTextContent h2 {
+    font-size: 26px;
+  }
+}

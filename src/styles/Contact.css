@@ -1,0 +1,164 @@
+.contactPage {
+  width: 100%;
+  padding: 80px 7%;
+  background: #f5f2ed;
+  color: #24211e;
+  min-height: 85vh;
+}
+
+.contactHero {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 50px;
+}
+
+.contactHero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #24211e;
+}
+
+.contactHero p {
+  color: #655c52;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.contactContainer {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactInfoCard {
+  flex: 1;
+  background: #24211e;
+  color: white;
+  padding: 45px 35px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contactInfoCard h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.infoSubtitle {
+  color: #c8c0b5;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.infoItem strong {
+  display: block;
+  font-size: 14px;
+  color: #a47a43;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.infoItem p {
+  font-size: 16px;
+  color: #e5ded3;
+  margin: 0;
+}
+
+.contactFormCard {
+  flex: 1.4;
+  background: white;
+  padding: 45px 35px;
+  border: 1px solid #e5ded3;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.contactFormCard h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #24211e;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #24211e;
+  margin-bottom: 8px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid #e5ded3;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fdfdfd;
+  color: #24211e;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #a47a43;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 14px;
+  background: #a47a43;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.submitBtn:hover {
+  background: #24211e;
+}
+
+@media (max-width: 900px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactPage {
+    padding: 50px 5%;
+  }
+
+  .contactHero h1 {
+    font-size: 32px;
+  }
+
+  .contactInfoCard,
+  .contactFormCard {
+    padding: 30px 20px;
+  }
+}
